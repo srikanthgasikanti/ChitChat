@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:src="@drawable/blue_back_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_info"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Please provide your name and profile photo"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_avatar"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Profile"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:layout_marginTop="30dp"
+        android:layout_height="120dp"/>
+
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profile Name"
+        android:paddingVertical="13dp"
+        android:textSize="16sp"
+        android:inputType="text
+"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bottom_line_edit_text"
+        android:layout_marginHorizontal="50dp"/>
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hey_there_i_am_using_chitchat"
+        android:paddingVertical="13dp"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bottom_line_edit_text"
+        android:layout_marginHorizontal="50dp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:paddingHorizontal="70dp"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="15sp"
+        app:cornerRadius="8dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_marginTop="25dp"
+        android:text="@string/you_can_proceed_further_only_after_providing_above_profile_info_along_with_profile_image_button_will_be_enabled_after_5_10_sec_when_you_select_profile_photo"
+        android:layout_width="match_parent"
+        android:textColor="#5E5B5B"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
